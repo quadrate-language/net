@@ -1,0 +1,13 @@
+{
+	"name": "net",
+	"version": "0.1.0",
+	"namespace": "net",
+	"description": "TCP network socket operations",
+	"license": "Apache-2.0",
+	"repository": "https://github.com/quadrate-language/net",
+	"keywords": ["network", "socket", "tcp", "networking"],
+	"quadrate": ">=0.4.0",
+	"native": {
+		"link": []
+	}
+}
