@@ -14,7 +14,7 @@ pub const ErrReceive = 6
 /// Error: Invalid argument.
 pub const ErrInvalidArg = 7
 
-import "libqdnet.a" as "net" {
+import "libqdnet_static.a" as "net" {
 	/// Start listening for connections on a port.
 	/// @param port i64 Port number to listen on
 	/// @return socket i64 Server socket descriptor
