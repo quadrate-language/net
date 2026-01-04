@@ -1,0 +1,14 @@
+// Unit tests for the net module
+use net
+use testing
+
+test "net error constants" {
+	// Verify error constants have expected values
+	net::ErrListen 2 testing::assert_eq
+	net::ErrAccept 3 testing::assert_eq
+	net::ErrConnect 4 testing::assert_eq
+	net::ErrSend 5 testing::assert_eq
+	net::ErrReceive 6 testing::assert_eq
+	net::ErrInvalidArg 7 testing::assert_eq
+}
+
