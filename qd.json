@@ -8,6 +8,7 @@
 	"keywords": ["network", "socket", "tcp", "networking"],
 	"quadrate": ">=0.4.0",
 	"native": {
-		"link": []
+		"link": [],
+		"link_haiku": ["network"]
 	}
 }
