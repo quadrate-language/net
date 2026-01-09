@@ -5,7 +5,7 @@ TCP networking module for Quadrate.
 ## Installation
 
 ```bash
-quadpm install net
+quadpm install https://github.com/quadrate-lanuage/net
 ```
 
 ## Usage
