@@ -23,7 +23,7 @@ extern "C" {
  *
  * Creates a TCP socket, binds it to the specified port, and starts listening.
  */
-qd_exec_result usr_net_listen(qd_context* ctx);
+int usr_net_listen(qd_context* ctx);
 
 /**
  * @brief Accept an incoming connection
@@ -33,7 +33,7 @@ qd_exec_result usr_net_listen(qd_context* ctx);
  *
  * Blocks until a client connects, then returns the client socket descriptor.
  */
-qd_exec_result usr_net_accept(qd_context* ctx);
+int usr_net_accept(qd_context* ctx);
 
 /**
  * @brief Connect to a remote server
@@ -43,7 +43,7 @@ qd_exec_result usr_net_accept(qd_context* ctx);
  *
  * Connects to the specified host and port, returns the socket descriptor.
  */
-qd_exec_result usr_net_connect(qd_context* ctx);
+int usr_net_connect(qd_context* ctx);
 
 /**
  * @brief Send data over a socket
@@ -53,7 +53,7 @@ qd_exec_result usr_net_connect(qd_context* ctx);
  *
  * Sends the string data over the socket.
  */
-qd_exec_result usr_net_send(qd_context* ctx);
+int usr_net_send(qd_context* ctx);
 
 /**
  * @brief Receive data from a socket
@@ -63,7 +63,7 @@ qd_exec_result usr_net_send(qd_context* ctx);
  *
  * Receives up to max_bytes from the socket, returns the received data as a string.
  */
-qd_exec_result usr_net_receive(qd_context* ctx);
+int usr_net_receive(qd_context* ctx);
 
 /**
  * @brief Shutdown a socket
@@ -73,7 +73,7 @@ qd_exec_result usr_net_receive(qd_context* ctx);
  *
  * Shuts down the socket for further send/receive operations.
  */
-qd_exec_result usr_net_shutdown(qd_context* ctx);
+int usr_net_shutdown(qd_context* ctx);
 
 /**
  * @brief Close a socket
@@ -83,7 +83,7 @@ qd_exec_result usr_net_shutdown(qd_context* ctx);
  *
  * Closes the socket and releases associated resources.
  */
-qd_exec_result usr_net_close(qd_context* ctx);
+int usr_net_close(qd_context* ctx);
 
 #ifdef __cplusplus
 }
